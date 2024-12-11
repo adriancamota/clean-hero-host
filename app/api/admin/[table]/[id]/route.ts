@@ -23,7 +23,7 @@ export async function PUT(
     }
 
     const body = await request.json()
-    const { id, ...updateData } = body
+    const updateData = body
 
     // Remove createAt from updateData if it exists
     delete updateData.createAt
